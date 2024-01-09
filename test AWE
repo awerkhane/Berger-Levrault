@@ -1,0 +1,19 @@
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'fr'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D2o000000ibJZ',
+				'BL_Chat_AWE',
+				'https://klint-ce-dev-ed.develop.my.site.com/ESWBLChatAWE1704807221946',
+				{
+					scrt2URL: 'https://klint-ce-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://klint-ce-dev-ed.develop.my.site.com/ESWBLChatAWE1704807221946/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
